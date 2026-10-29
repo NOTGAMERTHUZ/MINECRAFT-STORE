@@ -1,0 +1,60 @@
+# NOTGAMERTHUZ NGTStore
+economy:
+  symbol: "$"
+  starting-balance: 1000   # only used when Vault is NOT installed
+
+auction:
+  duration-hours: 48
+  tax-percent: 5
+  max-listings: 10
+  min-price: 1
+
+bounty:
+  min-amount: 100
+
+# Item key = Bukkit Material name. buy/sell <= 0 means disabled.
+store:
+  categories:
+    blocks:
+      name: "<green><bold>Blocks"
+      icon: GRASS_BLOCK
+      items:
+        STONE: {buy: 10, sell: 2}
+        COBBLESTONE: {buy: 6, sell: 1}
+        OAK_LOG: {buy: 12, sell: 3}
+        GLASS: {buy: 15, sell: 3}
+        SAND: {buy: 8, sell: 1}
+        DIRT: {buy: 4, sell: 1}
+        BRICKS: {buy: 30, sell: 6}
+        QUARTZ_BLOCK: {buy: 60, sell: 12}
+    ores:
+      name: "<aqua><bold>Ores & Minerals"
+      icon: DIAMOND
+      items:
+        COAL: {buy: 15, sell: 4}
+        IRON_INGOT: {buy: 60, sell: 15}
+        GOLD_INGOT: {buy: 120, sell: 30}
+        REDSTONE: {buy: 20, sell: 5}
+        LAPIS_LAZULI: {buy: 25, sell: 6}
+        EMERALD: {buy: 250, sell: 60}
+        DIAMOND: {buy: 500, sell: 120}
+        NETHERITE_INGOT: {buy: 8000, sell: 2000}
+    food:
+      name: "<gold><bold>Food"
+      icon: COOKED_BEEF
+      items:
+        BREAD: {buy: 10, sell: 2}
+        COOKED_BEEF: {buy: 20, sell: 5}
+        GOLDEN_APPLE: {buy: 400, sell: 80}
+        CARROT: {buy: 6, sell: 1}
+        APPLE: {buy: 8, sell: 2}
+    tools:
+      name: "<red><bold>Tools & Combat"
+      icon: DIAMOND_SWORD
+      items:
+        DIAMOND_SWORD: {buy: 900, sell: 0}
+        DIAMOND_PICKAXE: {buy: 1000, sell: 0}
+        BOW: {buy: 150, sell: 0}
+        ARROW: {buy: 5, sell: 0}
+        SHIELD: {buy: 120, sell: 0}
+        ENDER_PEARL: {buy: 200, sell: 50}
