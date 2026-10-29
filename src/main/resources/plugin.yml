@@ -1,0 +1,36 @@
+name: NGTStore
+version: 1.0.0
+main: com.notgamerthuz.ngtstore.NGT
+api-version: '26.2'
+authors: [NOTGAMERTHUZ]
+website: https://github.com/NOTGAMERTHUZ
+description: NOTGAMERTHUZ Store, Auction House and Bounty system
+softdepend: [Vault]
+commands:
+  store:
+    description: Open the NOTGAMERTHUZ store
+    aliases: [shop]
+    permission: ngtstore.use
+  sellall:
+    description: Sell everything sellable in your inventory
+    permission: ngtstore.use
+  ah:
+    description: Auction house
+    aliases: [auction]
+    permission: ngtstore.use
+  bounty:
+    description: Bounty system
+    aliases: [bounties]
+    permission: ngtstore.use
+  balance:
+    description: Check your balance
+    aliases: [bal]
+    permission: ngtstore.use
+  ngt:
+    description: NOTGAMERTHUZ admin command
+    aliases: [ngtstore]
+permissions:
+  ngtstore.use:
+    default: true
+  ngtstore.admin:
+    default: op
